@@ -18,8 +18,6 @@ $t-fz-md-3: 27px;
 $t-fz-md-2: 26px;
 $t-fz-md-1: 20px;
 
-
-
 .updated{
     font-size: 50px;
     text-transform: uppercase;
@@ -37,6 +35,7 @@ body{
 }
 
 .wrapper{
+    padding: $p-fz-md-4 + 20px 0;
     width: 100%;
     margin: auto;
 }
@@ -49,7 +48,7 @@ body{
 
 .portfolio-button{
     color: #eba834;
-    
+
     text-decoration: none;
 }
 
@@ -66,9 +65,9 @@ body{
         max-width: 350px;
         min-width: 350px;
     }
-    
+
     .flex-left{
-        
+
         margin-right: 100px;
     }
 }
@@ -86,7 +85,7 @@ p{
     font-size: $p-fz-md-4;
     color: #fff;
     line-height: 35px;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 .option-section{
@@ -94,23 +93,20 @@ p{
 }
 
 .own__rating{
-    
     span{
         display: inline-block;
         border-radius: 50%;
         height: 15px;
         width: 15px;
         border: 1px solid #eba834;
-        
+
         &.active{
             background-color: #eba834;
         }
     }
 }
 
-
 .section1{
-    padding: 90px 0px 0px 0px;
     .flex{
         align-items: center;
     }
@@ -138,11 +134,10 @@ p{
         }
     }
 }
+
 .section2{
-    
     .flex-left{
         .contact{
-            
             &__item , &__item a , &__item a:visited{
                 font-size: $p-fz-md-4;
                 color: #fff;
@@ -163,42 +158,35 @@ p{
                 list-style: none;
             }
         }
-        .skills{
-            
-            
-        }
     }
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     .title{
         font-size: $t-fz-md-3;
         line-height: 30px;
         margin-bottom: $t-fz-md-1;
         padding: 50px 0px 0px 0px;
     }
-    
+
     p{
         font-size: $p-fz-md-3;
         color: #fff;
         line-height: 32px;
-        text-decoration: none;   
+        text-decoration: none;
     }
-    
-    
-    
+
     .own__rating{
-        
+
         span{
             height: 13px;
             width: 13px;
         }
     }
-    
-    
+
+
     .section1 {
-        padding: 90px 0px 0px 0px;
         .flex{
             flex-direction: column-reverse;
             .flex-right{
@@ -224,10 +212,10 @@ p{
         }
     }
     .section2{
-        
+
         .flex-left{
             .contact{
-                
+
                 &__item , &__item a , &__item a:visited{
                     font-size: $p-fz-md-3;
                     line-height: 35px;
@@ -237,16 +225,16 @@ p{
     }
 }
 @media screen and (max-width: 768px) {
-    
+
     .flex{
-        
+
         .flex-right{
             max-width: 300px;
             min-width: 300px;
         }
-        
+
         .flex-left{
-            
+
             margin-right: 50px;
         }
     }
@@ -255,17 +243,16 @@ p{
         font-size: $t-fz-md-1;
         line-height: 27px;
         padding: 40px 0px 0px 0px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
-    
+
     p{
         font-size: $p-fz-md-2;
-        line-height: 25px; 
+        line-height: 25px;
     }
-    
-    
+
+
     .section1 {
-        padding: 60px 0px 0px 0px;
         .flex{
             .flex-right{
                 max-width: 300px;
@@ -287,10 +274,10 @@ p{
         }
     }
     .section2{
-        
+
         .flex-left{
             .contact{
-                
+
                 &__item , &__item a , &__item a:visited{
                     font-size: $p-fz-md-2;
                     line-height: 25px;
@@ -300,16 +287,16 @@ p{
     }
 }
 @media screen and (max-width: 630px) {
-    
+
     .flex{
-        
+
         .flex-right{
             max-width: 250px;
             min-width: 200px;
         }
-        
+
         .flex-left{
-            
+
             margin-right: 30px;
         }
     }
@@ -317,17 +304,16 @@ p{
         font-size: $t-fz-md-1;
         line-height: 24px;
         padding: 35px 0px 0px 0px;
-        margin-bottom: 12px; 
+        margin-bottom: 12px;
     }
-    
+
     p{
         font-size: $p-fz-md-1;
-        line-height: 22px; 
+        line-height: 22px;
     }
-    
-    
+
+
     .section1 {
-        padding: 40px 0px 0px 0px;
         .flex{
             .flex-right{
                 max-width: 250px;
@@ -347,10 +333,10 @@ p{
         }
     }
     .section2{
-        
+
         .flex-left{
             .contact{
-                
+
                 &__item , &__item a , &__item a:visited{
                     font-size: $p-fz-md-1;
                     line-height: 25px;
@@ -360,7 +346,7 @@ p{
     }
 }
 @media screen and (max-width: 630px) {
-    
+
     .flex{
         flex-direction: column;
         .flex-right{
@@ -368,33 +354,32 @@ p{
             min-width: 310px;
             margin: 0 auto;
         }
-        
+
         .flex-left{
-            
-            
+
+
             max-width: 310px;
             min-width: 310px;
             margin: 0 auto;
         }
     }
     .title{
-        
+
         font-size: $t-fz-md-1;
         line-height: 24px;
         padding: 35px 0px 0px 0px;
-        margin-bottom: 12px; 
+        margin-bottom: 12px;
     }
-    
+
     p{
         font-size: $p-fz-md-2;
-        line-height: 25px; 
+        line-height: 25px;
     }
     .container{
         padding: 0px 20px;
     }
-    
+
     .section1 {
-        padding: 45px 0px 0px 0px;
         .flex{
             .flex-right{
                 max-width: 200px;
@@ -412,10 +397,10 @@ p{
         }
     }
     .section2{
-        
+
         .flex-left{
             .contact{
-                
+
                 &__item , &__item a , &__item a:visited{
                     font-size: $p-fz-md-2;
                     line-height: 27px;
@@ -425,23 +410,23 @@ p{
     }
 }
 @media screen and (max-width: 375px) {
-    
+
     .flex{
         .flex-right{
             max-width: 270px;
             min-width: 270px;
             margin: 0 auto;
         }
-        
+
         .flex-left{
-            
-            
+
+
             max-width: 270px;
             min-width: 270px;
             margin: 0 auto;
         }
     }
-    
+
     .section1 {
         .developer__initials{
             .developer__name{

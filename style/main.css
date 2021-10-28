@@ -1,7 +1,8 @@
 *, *::after, *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font: inherit;
   vertical-align: baseline;
 }
@@ -25,6 +26,7 @@ body {
 }
 
 .wrapper {
+  padding: 45px 0;
   width: 100%;
   margin: auto;
 }
@@ -41,15 +43,27 @@ body {
 }
 
 .ai-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .flex .flex-right {
   max-width: 350px;
@@ -90,11 +104,10 @@ p {
   background-color: #eba834;
 }
 
-.section1 {
-  padding: 90px 0px 0px 0px;
-}
 .section1 .flex {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section1 .developer__initials .developer__name {
   font-weight: 600;
@@ -114,7 +127,8 @@ p {
 .section1 .developer__img img {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
@@ -133,6 +147,7 @@ p {
 .section2 .flex-right ul li {
   list-style: none;
 }
+
 @media screen and (max-width: 1024px) {
   .title {
     font-size: 27px;
@@ -153,11 +168,11 @@ p {
     width: 13px;
   }
 
-  .section1 {
-    padding: 90px 0px 0px 0px;
-  }
   .section1 .flex {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .section1 .flex .flex-right {
     max-width: 300px;
@@ -206,9 +221,6 @@ p {
     line-height: 25px;
   }
 
-  .section1 {
-    padding: 60px 0px 0px 0px;
-  }
   .section1 .flex .flex-right {
     max-width: 300px;
     min-width: 300px;
@@ -253,9 +265,6 @@ p {
     line-height: 22px;
   }
 
-  .section1 {
-    padding: 40px 0px 0px 0px;
-  }
   .section1 .flex .flex-right {
     max-width: 250px;
     min-width: 250px;
@@ -279,7 +288,10 @@ p {
 }
 @media screen and (max-width: 630px) {
   .flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .flex .flex-right {
     max-width: 310px;
@@ -308,9 +320,6 @@ p {
     padding: 0px 20px;
   }
 
-  .section1 {
-    padding: 45px 0px 0px 0px;
-  }
   .section1 .flex .flex-right {
     max-width: 200px;
     min-width: 200px;
