@@ -82,6 +82,10 @@ body {
   padding: 60px 0px 0px 0px;
 }
 
+.main-title {
+  text-align: center;
+}
+
 p {
   font-size: 25px;
   color: #fff;
@@ -104,27 +108,27 @@ p {
   background-color: #eba834;
 }
 
-.section1 .flex {
+.main-info .flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.section1 .developer__initials .developer__name {
+.main-info .developer__initials .developer__name {
   font-weight: 600;
   font-size: 60px;
   line-height: 74px;
   letter-spacing: 1px;
 }
-.section1 .developer__initials .developer_description {
+.main-info .developer__initials .developer_description {
   font-size: 24px;
   line-height: 34px;
   padding-top: 10px;
   color: #eba834;
 }
-.section1 .developer__img {
+.main-info .developer__img {
   width: 100%;
 }
-.section1 .developer__img img {
+.main-info .developer__img img {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
@@ -132,7 +136,7 @@ p {
   border-radius: 50%;
 }
 
-.section2 .flex-left .contact__item, .section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+.commercial-info .flex-left .contact__item, .commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
   font-size: 25px;
   color: #fff;
   line-height: 35px;
@@ -140,12 +144,90 @@ p {
   font-style: italic;
   font-weight: 300;
 }
-.section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+.commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
   font-style: normal;
   font-weight: 400;
 }
-.section2 .flex-right ul li {
+.commercial-info .flex-right ul li {
   list-style: none;
+}
+
+.portfolio-section .portfolio-cards__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item {
+  margin: 10px;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  aspect-ratio: 9/5;
+  max-width: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item .portfolio-card__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item .portfolio-card-info {
+  background: rgba(149, 95, 1, 0.5);
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item .portfolio-card-info i {
+  color: #272727;
+  font-size: 25px;
+  margin: 0px 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item .portfolio-card-info i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item:hover .portfolio-card-info {
+  background: rgba(0, 0, 0, 0.6);
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item:hover i {
+  color: #fff;
+}
+.portfolio-section .portfolio-cards__wrapper .portfolio-card__item:hover .github-action i {
+  color: #88a7cf !important;
 }
 
 @media screen and (max-width: 1024px) {

@@ -10,13 +10,13 @@
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="wrapper">
             <div class="container">
-                <section class="section1">
+                <section class="developer-info__section main-info">
                     <div class="flex">
-
                         <div class="flex-left">
                             <div class="developer__initials">
                                 <h1 class="developer__name">
@@ -37,7 +37,7 @@
                     </div>
 
                 </section>
-                <section class="section2">
+                <section class="developer-info__section commercial-info">
                     <div class="flex">
                         <div class="flex-left">
                             <div class="about option-section">
@@ -106,16 +106,6 @@
                                         </div>
                                     </li>
                                     <li class="ai-c">
-                                        <p class="technology__name">JEST</p>
-                                        <div class="own__rating">
-                                            <span class="active"></span>
-                                            <span class="active"></span>
-                                            <span class="active"></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </li>
-                                    <li class="ai-c">
                                         <p class="technology__name">Bootstrap</p>
                                         <div class="own__rating">
                                             <span class="active"></span>
@@ -126,11 +116,21 @@
                                         </div>
                                     </li>
                                     <li class="ai-c">
+                                        <p class="technology__name">JEST</p>
+                                        <div class="own__rating">
+                                            <span class="active"></span>
+                                            <span class="active"></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </li>
+                                    <li class="ai-c">
                                         <p class="technology__name">Cypress</p>
                                         <div class="own__rating">
                                             <span class="active"></span>
                                             <span class="active"></span>
-                                            <span class="active"></span>
+                                            <span ></span>
                                             <span ></span>
                                             <span ></span>
                                         </div>
@@ -186,6 +186,24 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="portfolio-section">
+                    <h1 class="title main-title">
+                        Portfolio
+                    </h1>
+                    <div class="portfolio-cards__wrapper">
+                        <div class="portfolio-card__item">
+                            <img src="assets/subsapp-preview.png" class="portfolio-card__bg" alt="">
+                            <div class="portfolio-card-info">
+                                <i class="fab fa-vuejs"></i>
+                                <i class="fab fa-js"></i>
+                                <i class="fab fa-css3"></i>
+                                <a href="http://ybogdanq.github.io/SubsApp" class="github-action"><i class="fab fa-github"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <!-- <h1 class="updated">It'll be updated soon</h1>    -->
             </div>
