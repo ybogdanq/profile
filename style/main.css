@@ -33,7 +33,7 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0px 15px;
+  padding: 0px 25px;
   margin: 0 auto;
 }
 
@@ -153,31 +153,35 @@ p {
 }
 
 .portfolio-section .portfolio-cards__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: minmax(200px, 1fr) 20px minmax(200px, 1fr);
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.portfolio-section .portfolio-cards__wrapper > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.portfolio-section .portfolio-cards__wrapper > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
 }
 .portfolio-section .portfolio-cards__wrapper .portfolio-card__item {
-  margin: 10px;
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   aspect-ratio: 9/5;
-  max-width: 50%;
+  width: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .portfolio-section .portfolio-cards__wrapper .portfolio-card__item .portfolio-card__bg {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
   top: 0;
   left: 0;
@@ -250,34 +254,34 @@ p {
     width: 13px;
   }
 
-  .section1 .flex {
+  .main-info .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .section1 .flex .flex-right {
+  .main-info .flex .flex-right {
     max-width: 300px;
     min-width: 300px;
   }
-  .section1 .flex .flex-left {
+  .main-info .flex .flex-left {
     margin: 0;
   }
-  .section1 .developer__initials {
+  .main-info .developer__initials {
     margin-top: 20px;
     text-align: center;
   }
-  .section1 .developer__initials .developer__name {
+  .main-info .developer__initials .developer__name {
     font-size: 50px;
     line-height: auto;
   }
-  .section1 .developer__initials .developer_description {
+  .main-info .developer__initials .developer_description {
     font-size: 25px;
     line-height: 34px;
     padding-top: 0px;
   }
 
-  .section2 .flex-left .contact__item, .section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+  .commercial-info .flex-left .contact__item, .commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
     font-size: 20px;
     line-height: 35px;
   }
@@ -303,25 +307,25 @@ p {
     line-height: 25px;
   }
 
-  .section1 .flex .flex-right {
+  .main-info .flex .flex-right {
     max-width: 300px;
     min-width: 300px;
   }
-  .section1 .developer__initials {
+  .main-info .developer__initials {
     margin-top: 20px;
     text-align: center;
   }
-  .section1 .developer__initials .developer__name {
+  .main-info .developer__initials .developer__name {
     font-size: 45px;
     line-height: auto;
   }
-  .section1 .developer__initials .developer_description {
+  .main-info .developer__initials .developer_description {
     font-size: 20px;
     line-height: 34px;
     padding-top: 0px;
   }
 
-  .section2 .flex-left .contact__item, .section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+  .commercial-info .flex-left .contact__item, .commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
     font-size: 17px;
     line-height: 25px;
   }
@@ -347,25 +351,33 @@ p {
     line-height: 22px;
   }
 
-  .section1 .flex .flex-right {
+  .main-info .flex .flex-right {
     max-width: 250px;
     min-width: 250px;
   }
-  .section1 .developer__initials {
+  .main-info .developer__initials {
     margin-top: 15px;
   }
-  .section1 .developer__initials .developer__name {
+  .main-info .developer__initials .developer__name {
     font-size: 35px;
     line-height: 45px;
   }
-  .section1 .developer__initials .developer_description {
+  .main-info .developer__initials .developer_description {
     font-size: 17px;
     line-height: 30px;
   }
 
-  .section2 .flex-left .contact__item, .section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+  .commercial-info .flex-left .contact__item, .commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  .portfolio-section .portfolio-cards__wrapper {
+    grid-gap: 15px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 310px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 630px) {
@@ -399,22 +411,22 @@ p {
   }
 
   .container {
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
-  .section1 .flex .flex-right {
+  .main-info .flex .flex-right {
     max-width: 200px;
     min-width: 200px;
   }
-  .section1 .developer__initials .developer__name {
+  .main-info .developer__initials .developer__name {
     font-size: 27px;
     line-height: 40px;
   }
-  .section1 .developer__initials .developer_description {
+  .main-info .developer__initials .developer_description {
     font-size: 17px;
   }
 
-  .section2 .flex-left .contact__item, .section2 .flex-left .contact__item a, .section2 .flex-left .contact__item a:visited {
+  .commercial-info .flex-left .contact__item, .commercial-info .flex-left .contact__item a, .commercial-info .flex-left .contact__item a:visited {
     font-size: 17px;
     line-height: 27px;
   }
@@ -431,7 +443,7 @@ p {
     margin: 0 auto;
   }
 
-  .section1 .developer__initials .developer__name {
+  .main-info .developer__initials .developer__name {
     font-size: 24px;
     line-height: 35px;
   }
